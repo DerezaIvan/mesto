@@ -3,3 +3,20 @@
     grid-template-columns: 168px 294px 20px;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .profile__content {
+        display: grid;
+        grid-template-rows: 128px 80px;
+        grid-template-columns: 300px 20px;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .profile__content {
+        grid-template-columns: 200px 20px;
+
+    }
+}

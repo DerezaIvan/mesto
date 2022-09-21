@@ -19,7 +19,7 @@
 
 /*---------------------ELEMENTS-------------*/
 @import url(../blocks/elements/elements.css);
-@import url(../blocks/elements/__main/elements__main.css);
+@import url(../blocks/elements/__cards/elements__cards.css);
 @import url(../blocks/element/element.css);
 @import url(../blocks/element/__illustration/element__illustration.css);
 @import url(../blocks/element/__main/element__main.css);
