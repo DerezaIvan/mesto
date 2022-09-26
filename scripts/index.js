@@ -1,5 +1,5 @@
 const overlayEl = document.querySelector('.overlay');
-const formPopup = document.querySelector('.popup');
+const formPopup = document.querySelector('.popup__form');
 const openEditButton = document.querySelector('.profile__edit-button'); //открытие Попапа
 const closePopupButton = overlayEl.querySelector('.popup__close-button'); //закрытие Попапа
 const profileName = document.querySelector('.profile__title'); //Имя пользователя
@@ -30,4 +30,4 @@ function formSubmitHandler(evt) {
 
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
-overlayEl.addEventListener('submit', formSubmitHandler);
+formPopup.addEventListener('submit', formSubmitHandler);
