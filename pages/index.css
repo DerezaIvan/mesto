@@ -1,6 +1,7 @@
 /*---------------------Стили----------------*/
 @import url(../blocks/page/page.css);
 @import url(../vendor/fonts/fonts.css);
+@import url(../vendor/normalize.css);
 
 
 /*---------------------HEADER---------------*/
@@ -31,11 +32,10 @@
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
 /*-----------------------POPUP--------------*/
-@import url(../blocks/overlay/overlay.css);
-@import url(../blocks/overlay/__opened/overlay__opened.css);
 @import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__opened/popup__opened.css);
+@import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
-@import url(../blocks/popup/__input-name/popup__input-name.css);
-@import url(../blocks/popup/__input-hobbie/popup__input-hobbie.css);
+@import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__save-button/popup__save-button.css);

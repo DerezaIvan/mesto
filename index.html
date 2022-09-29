@@ -30,52 +30,64 @@
         <section class="elements">
             <ul class="elements__cards">
                 <li class="element">
-                    <img class="element__illustration" src="./images/kseniya-danilina-lBC1z4B17zI-unsplash.jpg"
-                        alt="Сулакский каньон">
-                    <div class="element__main">
-                        <h2 class="element__text">Дагестан</h2>
-                        <button class="element__like"></button>
-                    </div>
+                    <article class='element__card'>
+                        <img class="element__illustration" src="./images/kseniya-danilina-lBC1z4B17zI-unsplash.jpg"
+                            alt="Сулакский каньон">
+                        <div class="element__main">
+                            <h2 class="element__text">Дагестан</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </article>
                 </li>
                 <li class="element">
-                    <img class="element__illustration" src="./images/elina-sitnikova-JHnOjjROjjo-unsplash.jpg"
-                        alt="Дворец земледельцев">
-                    <div class="element__main">
-                        <h2 class="element__text">Казань</h2>
-                        <button class="element__like"></button>
-                    </div>
+                    <article class='element__card'>
+                        <img class="element__illustration" src="./images/elina-sitnikova-JHnOjjROjjo-unsplash.jpg"
+                            alt="Дворец земледельцев">
+                        <div class="element__main">
+                            <h2 class="element__text">Казань</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </article>
                 </li>
                 <li class="element">
-                    <img class="element__illustration" src="./images/irina-shishkina-dp0Z-i7zYHc-unsplash.jpg"
-                        alt="Лес и Горы">
-                    <div class="element__main">
-                        <h2 class="element__text">Домбай</h2>
-                        <button class="element__like"></button>
-                    </div>
+                    <article class='element__card'>
+                        <img class="element__illustration" src="./images/irina-shishkina-dp0Z-i7zYHc-unsplash.jpg"
+                            alt="Лес и Горы">
+                        <div class="element__main">
+                            <h2 class="element__text">Домбай</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </article>
                 </li>
                 <li class="element">
-                    <img class="element__illustration" src="./images/michail-dementiev-bGMg_tXu70o-unsplash.jpg"
-                        alt="Роза Хутор">
-                    <div class="element__main">
-                        <h2 class="element__text">Сочи</h2>
-                        <button class="element__like"></button>
-                    </div>
+                    <article class='element__card'>
+                        <img class="element__illustration" src="./images/michail-dementiev-bGMg_tXu70o-unsplash.jpg"
+                            alt="Роза Хутор">
+                        <div class="element__main">
+                            <h2 class="element__text">Сочи</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </article>
                 </li>
                 <li class="element">
-                    <img class="element__illustration" src="./images/olga-kovalski-ZoZBfG_Vrzg-unsplash.jpg"
-                        alt="Кремль">
-                    <div class="element__main">
-                        <h2 class="element__text">Москва</h2>
-                        <button class="element__like"></button>
-                    </div>
+                    <article class='element__card'>
+                        <img class="element__illustration" src="./images/olga-kovalski-ZoZBfG_Vrzg-unsplash.jpg"
+                            alt="Кремль">
+                        <div class="element__main">
+                            <h2 class="element__text">Москва</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </article>
                 </li>
                 <li class="element">
-                    <img class="element__illustration" src="./images/vadim-artyukhin-XdZCa1M2m9o-unsplash.jpg"
-                        alt="Байкал">
-                    <div class="element__main">
-                        <h2 class="element__text">Байкал</h2>
-                        <button class="element__like"></button>
-                    </div>
+                    <article class='element__card'>
+                        <img class="element__illustration" src="./images/vadim-artyukhin-XdZCa1M2m9o-unsplash.jpg"
+                            alt="Байкал">
+                        <div class="element__main">
+                            <h2 class="element__text">Байкал</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </article>
                 </li>
             </ul>
         </section>
@@ -83,17 +95,17 @@
     <footer class="footer">
         <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
-    <section class="overlay">
-        <div class="popup">
-            <button class="popup__close-button"></button>
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close-button" type="button"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__form">
-            <input type="text" class="popup__input-name" value="Жав-Ив Кусто" id="inputName">
-            <input type="text" class="popup__input-hobbie" value="Исследователь океана" id="inputHobbie">
-            <button class="popup__save-button" type="button">Сохранить</button>
-        </form>
+            <form class="popup__form" name="popupForm">
+                <input type="text" class="popup__input popup__input_type_name" placeholder="Имя">
+                <input type="text" class="popup__input popup__input_type_hobbie" placeholder="О себе">
+                <button class="popup__save-button" type="button" type="submit">Сохранить</button>
+            </form>
         </div>
-    </section>
+    </div>
 
     <script src="./scripts/index.js"></script>
 </body>
