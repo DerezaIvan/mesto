@@ -12,9 +12,9 @@
 }
 
 @media screen and (max-width: 426px) {
-.profile__paragraph {
-  font-size: 14px;
-  line-height: 17px;
-  margin-top: 1px;
-}
+  .profile__paragraph {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 5px 0 0 22px;
+  }
 }
