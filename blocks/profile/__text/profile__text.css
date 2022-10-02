@@ -3,17 +3,15 @@
 }
 
 @media screen and (max-width: 768px) {
-.profile__text {
-  grid-area: -2;
-  margin-top: 23px;
-  text-align: center;
-}
+  .profile__text {
+    grid-area: -2;
+    margin-top: 23px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 426px) {
-.profile__text {
-  padding-top: 10px;
-  margin: 0;
-  padding-left: 15px;
-}
+  .profile__text {
+    margin: 0;
+  }
 }
