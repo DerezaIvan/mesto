@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Иван Дереза">
-    <meta name="description" content="Места России">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Иван Дереза" />
+    <meta name="description" content="Места России" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
   <body class="page">
@@ -15,7 +15,8 @@
       <img
         class="header__logo"
         src="./images/logo.svg"
-        alt="Логотип Место Россия">
+        alt="Логотип Место Россия"
+      />
     </header>
     <main class="main">
       <section class="profile">
@@ -23,7 +24,8 @@
           <img
             class="profile__avatar"
             src="./images/Avatar.jpg"
-            alt="Автарка Жака-Ив Кусто">
+            alt="Автарка Жака-Ив Кусто"
+          />
           <div class="profile__text">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <p class="profile__paragraph">Исследователь океана</p>
@@ -39,7 +41,8 @@
               <img
                 class="element__illustration"
                 src="./images/kseniya-danilina-lBC1z4B17zI-unsplash.jpg"
-                alt="Сулакский каньон">
+                alt="Сулакский каньон"
+              />
               <div class="element__main">
                 <h2 class="element__text">Дагестан</h2>
                 <button
@@ -47,6 +50,7 @@
                   type="button"
                 ></button>
               </div>
+              <button class="element__delete" type="button"></button>
             </article>
           </li>
           <li class="element">
@@ -54,11 +58,13 @@
               <img
                 class="element__illustration"
                 src="./images/elina-sitnikova-JHnOjjROjjo-unsplash.jpg"
-                alt="Дворец земледельцев">
+                alt="Дворец земледельцев"
+              />
               <div class="element__main">
                 <h2 class="element__text">Казань</h2>
                 <button class="element__like" type="button"></button>
               </div>
+              <button class="element__delete" type="button"></button>
             </article>
           </li>
           <li class="element">
@@ -66,11 +72,13 @@
               <img
                 class="element__illustration"
                 src="./images/irina-shishkina-dp0Z-i7zYHc-unsplash.jpg"
-                alt="Лес и Горы">
+                alt="Лес и Горы"
+              />
               <div class="element__main">
                 <h2 class="element__text">Домбай</h2>
                 <button class="element__like" type="button"></button>
               </div>
+              <button class="element__delete" type="button"></button>
             </article>
           </li>
           <li class="element">
@@ -78,11 +86,13 @@
               <img
                 class="element__illustration"
                 src="./images/michail-dementiev-bGMg_tXu70o-unsplash.jpg"
-                alt="Роза Хутор">
+                alt="Роза Хутор"
+              />
               <div class="element__main">
                 <h2 class="element__text">Сочи</h2>
                 <button class="element__like" type="button"></button>
               </div>
+              <button class="element__delete" type="button"></button>
             </article>
           </li>
           <li class="element">
@@ -90,11 +100,13 @@
               <img
                 class="element__illustration"
                 src="./images/olga-kovalski-ZoZBfG_Vrzg-unsplash.jpg"
-                alt="Кремль">
+                alt="Кремль"
+              />
               <div class="element__main">
                 <h2 class="element__text">Москва</h2>
                 <button class="element__like" type="button"></button>
               </div>
+              <button class="element__delete" type="button"></button>
             </article>
           </li>
           <li class="element">
@@ -102,11 +114,13 @@
               <img
                 class="element__illustration"
                 src="./images/vadim-artyukhin-XdZCa1M2m9o-unsplash.jpg"
-                alt="Байкал">
+                alt="Байкал"
+              />
               <div class="element__main">
                 <h2 class="element__text">Байкал</h2>
                 <button class="element__like" type="button"></button>
               </div>
+              <button class="element__delete" type="button"></button>
             </article>
           </li>
         </ul>
@@ -115,24 +129,97 @@
     <footer class="footer">
       <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
-    <div class="popup">
+    <div class="popup popup_profile">
       <div class="popup__container">
         <button class="popup__close-button" type="button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form" name="popupForm">
           <input
-            type="text" name="name"
+            type="text"
+            name="name"
             class="popup__input popup__input_type_name"
-            placeholder="Имя">
+            placeholder="Имя"
+          />
           <input
-            type="text" name="hobbie"
+            type="text"
+            name="hobbie"
             class="popup__input popup__input_type_hobbie"
-            placeholder="О себе">
+            placeholder="О себе"
+          />
           <button class="popup__save-button" type="submit">Сохранить</button>
         </form>
       </div>
     </div>
-
-    <script src="./scripts/index.js"></script>
+    <div class="popup popup_cards">
+      <div class="popup__container">
+        <button
+          class="popup__close-button"
+          type="button"
+          aria-label="закрыть форму"
+        ></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form class="popup__form" name="popupForm">
+          <input
+            type="text"
+            name="mestoName"
+            class="popup__input popup__input_type_name"
+            placeholder="Название"
+          />
+          <input
+            type="text"
+            name="mestoLink"
+            class="popup__input popup__input_type_link"
+            placeholder="Ссылка на картинку"
+          />
+          <button class="popup__save-button" type="submit"> Создать</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup_photo">
+      <div class="popup__container">
+        <button
+          class="popup__close-button"
+          type="button"
+          aria-label="закрыть форму"
+        ></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form class="popup__form" name="popupForm">
+          <input
+            type="text"
+            name="mestoName"
+            class="popup__input popup__input_type_name"
+            placeholder="Название"
+          />
+          <input
+            type="text"
+            name="mestoLink"
+            class="popup__input popup__input_type_link"
+            placeholder="Ссылка на картинку"
+          />
+          <button class="popup__save-button" type="submit"> Создать</button>
+        </form>
+      </div>
+    </div>
+    <template class="element-template">
+      <li class="element">
+        <article class="element__card">
+          <img
+            class="element__illustration"
+            src="./images/kseniya-danilina-lBC1z4B17zI-unsplash.jpg"
+            alt="Сулакский каньон"
+          />
+          <div class="element__main">
+            <h2 class="element__text">Дагестан</h2>
+            <button
+              class="element__like element__like_active"
+              type="button"
+            ></button>
+          </div>
+          <button class="element__delete" type="button"></button>
+        </article>
+      </li>
+    </template>
+    <!--<script src="./scripts/index.js"></script>-->
+    <script src="/scripts/index copy.js"></script>
   </body>
 </html>
