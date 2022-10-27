@@ -1,4 +1,11 @@
 .element__like_active {
-    background: url(../../../../images/Like_active.svg) center no-repeat;
+    background-image: url(../../../../images/Like_active.svg);
     background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 22px;
+    min-height: 19px;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
 }

@@ -1,15 +1,11 @@
 .element__delete {
-  background: url(../../../images/Group.svg) center no-repeat;
-  color: #fff;
-  min-width: 30px;
-  min-height: 30px;
-  position: relative;
-  top: -350px;
-  right: -240px;
-  border: 0;
-  cursor: pointer;
-}
-
-.element__delete:hover {
-  opacity: 0.5;
+  background-image: url(../../../images/IconDelete.svg);
+  background-color: rgba(0, 0, 0, 0);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  padding: 18px 19px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

@@ -109,10 +109,8 @@ function createCard(cardData) {
   cardText.textContent = name;
   cardImage.src = link;
   cardImage.alt = name;
-  const cardPhoto = cardElement.querySelector(".element__illustration");
-  cardElement.addEventListener('click', () => {
-    console.log('клик по картинке')
-    popupCardsOpen('name', 'link');
+  cardImage.addEventListener('click', () => {
+    console.log('клик по картинке');
   });
   cardLike.addEventListener ('click', () => {
     cardLike.classList.toggle('element__like_active');
