@@ -87,27 +87,21 @@
         </form>
       </div>
     </div>
-    <div class="popup popup_photo">
-      <button class="popup__button-close"></button>
-      <div class="popup__main">
-        <p class="popup__text">Байкал</p>
-        <img class="" src="" alt="">
+    <div class="popup popup_image">
+      <div class="popup__image-opened">
+        <button type="button" class="popup__button-close popup__button-close_image"></button>
+          <span class="popup__image-text">Байкал</span>
+          <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg" alt="Холмогорский район">
+        </div>
       </div>
     </div>
     <template class="element-template">
       <li class="element">
         <article class="element__card">
-          <img
-            class="element__illustration"
-            src=""
-            alt=""
-          />
+          <img class="element__illustration" src="" alt="" />
           <div class="element__main">
             <h2 class="element__text">Дагестан</h2>
-            <button
-              class="element__like"
-              type="button"
-            ></button>
+            <button class="element__like" type="button"></button>
           </div>
           <button class="element__delete" type="button"></button>
         </article>

@@ -2,6 +2,7 @@
   background-image: url(../../../images/IconDelete.svg);
   background-color: rgba(0, 0, 0, 0);
   object-fit: cover;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 18px 19px;
   border: none;
