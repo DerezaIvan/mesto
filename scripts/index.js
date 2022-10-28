@@ -96,7 +96,8 @@ popupCardsClose.addEventListener("click", function () {
 
 const templateElement = document.querySelector(".element-template");
 const cardsContainer = document.querySelector(".elements__cards");
-const imagePopup = document.querySelector(".popup_photo");
+const popupImage = document.querySelector(".popup_image");
+const popupImageClose = popupImage.querySelector(".popup__button-close_image");
 
 function createCard(cardData) {
   const { link, name } = cardData;
@@ -108,11 +109,7 @@ function createCard(cardData) {
   cardImage.src = link;
   cardImage.alt = name;
   cardImage.addEventListener('click', () => {
-    textImagePopup.textContent = cardText;
-    dataImagePopup.src = cardImage;
-    dataImagePopup.alt = cardImage;
-    console.log('клик по картинке');
-    togglePopup(imagePopup);
+    togglePopup(popupImage)
   });
   cardLike.addEventListener ('click', () => {
     cardLike.classList.toggle('element__like_active');
@@ -124,7 +121,6 @@ initialCards.forEach((data) => {
   cardsContainer.prepend(newCard);
 });
 
-function openImagePopup(card){
-
-}
-
+popupImageClose.addEventListener('click', () => {
+  togglePopup(popupImage);
+});
