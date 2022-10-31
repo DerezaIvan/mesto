@@ -70,16 +70,18 @@
           aria-label="закрыть форму"
         ></button>
         <h2 class="popup__title">Новое место</h2>
-        <form class="popup__form" name="popupForm">
+        <form class="popup__form popup__form_cards" name="popupForm">
           <input
             type="text"
-            name="mestoName"
-            class="popup__input popup__input_type_name"
+            name="place"
+            id="place"
+            class="popup__input popup__input_type_place"
             placeholder="Название"
           />
           <input
-            type="text"
-            name="mestoLink"
+            type="url"
+            name="link"
+            id="link"
             class="popup__input popup__input_type_link"
             placeholder="Ссылка на картинку"
           />
@@ -91,7 +93,7 @@
       <div class="popup__image-opened">
         <button type="button" class="popup__button-close popup__button-close_image"></button>
           <span class="popup__image-text">Байкал</span>
-          <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg" alt="Холмогорский район">
+          <img class="popup__image" src="" alt="">
         </div>
       </div>
     </div>
@@ -108,6 +110,5 @@
       </li>
     </template>
     <script src="./scripts/index.js"></script>
-    <!-- <script src="/scripts/cards.js"></script> -->
   </body>
 </html>

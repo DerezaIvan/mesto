@@ -98,6 +98,11 @@ const templateElement = document.querySelector(".element-template");
 const cardsContainer = document.querySelector(".elements__cards");
 const popupImage = document.querySelector(".popup_image");
 const popupImageClose = popupImage.querySelector(".popup__button-close_image");
+const popupImageContent = document.querySelector(".popup__image");
+const popupImageText = document.querySelector(".popup__image-text");
+const placeInput = document.querySelector(".popup__input_type_place");
+const linkInput = document.querySelector(".popup__input_type_link");
+const formCardImage = document.querySelector(".popup__form_cards");
 
 function createCard(cardData) {
   const { link, name } = cardData;
@@ -108,11 +113,19 @@ function createCard(cardData) {
   cardText.textContent = name;
   cardImage.src = link;
   cardImage.alt = name;
-  cardImage.addEventListener('click', () => {
-    togglePopup(popupImage)
+  cardImage.addEventListener("click", () => {
+    popupImageContent.src = link;
+    popupImageContent.alt = name;
+    popupImageText.textContent = name;
+    togglePopup(popupImage);
   });
-  cardLike.addEventListener ('click', () => {
-    cardLike.classList.toggle('element__like_active');
+  cardLike.addEventListener("click", () => {
+    cardLike.classList.toggle("element__like_active");
+  });
+  const imageDeleteButton = cardElement.querySelector(".element__delete");
+  imageDeleteButton.addEventListener("click", (evt) => {
+    cardElementDelete = evt.target.closest(".element");
+    cardElementDelete.remove();
   });
   return cardElement;
 }
@@ -121,6 +134,19 @@ initialCards.forEach((data) => {
   cardsContainer.prepend(newCard);
 });
 
-popupImageClose.addEventListener('click', () => {
+popupImageClose.addEventListener("click", () => {
   togglePopup(popupImage);
 });
+
+function formSubmitHandlerAddForm(evt) {
+  evt.preventDefault();
+  const newCardAdd = createCard({
+    name: placeInput.value,
+    link: linkInput.value,
+  });
+  cardsContainer.prepend(newCardAdd);
+  togglePopup(popupCards);
+  formCardImage.reset();
+}
+
+formCardImage.addEventListener("submit", formSubmitHandlerAddForm);
